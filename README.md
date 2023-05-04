@@ -27,12 +27,7 @@ lampify was tested with the lamp **Victoria Lighting Losange/PL500**, hovewer a 
 ## Dependencies
 This is the list of packages providing the files required to compile lampify. Be aware that package names usually do vary across different linux distributions.
 
-- Arch Linux
-  - bluez-libs
-  - make
-  - gcc
-
-- Debian / Ubuntu
+- Raspberry pi
   - libbluetooth-dev
   - make
   - gcc
