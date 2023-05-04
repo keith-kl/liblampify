@@ -7,44 +7,43 @@ The project offers the following functionality:
 - Controlling lamp brightness
 - Controlling lamp temperature
 - Sending initial setup signal
-- Sending desktop notifications
+~- Sending desktop notifications~
 
 ## Lamp compatibility
 lampify was tested with the lamp **Victoria Lighting Losange/PL500**, hovewer a lot of chinese lamps have common control algorithm, so lampify should be compatible with all BLE lamps that can be controlled via Android applications from the list below (the list may be incomplete).
 
 - Developed by [XuRenNan](https://play.google.com/store/apps/developer?id=XuRenNan)
   - [LampSmart Pro](https://play.google.com/store/apps/details?id=com.jingyuan.lamp)
-  - [FanLamp Pro](https://play.google.com/store/apps/details?id=com.jingyuan.fan_lamp)
-  - [ApplianceSmart](https://play.google.com/store/apps/details?id=com.jingyuan.smart_home)
-  - [Vmax smart](https://play.google.com/store/apps/details?id=com.jingyuan.vmax_smart)
+  ~- [FanLamp Pro](https://play.google.com/store/apps/details?id=com.jingyuan.fan_lamp)~
+  ~- [ApplianceSmart](https://play.google.com/store/apps/details?id=com.jingyuan.smart_home)~
+  ~- [Vmax smart](https://play.google.com/store/apps/details?id=com.jingyuan.vmax_smart)~
   
   
-- Developed by [ShangHai All Link Microelectronics Co., Ltd](https://play.google.com/store/apps/developer?id=ShangHai+All+Link+Microelectronics+Co.,+Ltd)
-  - [FanLamp](https://play.google.com/store/apps/details?id=com.fan.lamp)
-  - [ControlSwitch](https://play.google.com/store/apps/details?id=com.alllink.power_switch)
-  - [Lamp Smart Pro-Soft Lighting](https://play.google.com/store/apps/details?id=com.alllink.smart_lighting)
+~- Developed by [ShangHai All Link Microelectronics Co., Ltd](https://play.google.com/store/apps/developer?id=ShangHai+All+Link+Microelectronics+Co.,+Ltd)~
+  ~- [FanLamp](https://play.google.com/store/apps/details?id=com.fan.lamp)~
+  ~- [ControlSwitch](https://play.google.com/store/apps/details?id=com.alllink.power_switch)~
+  ~- [Lamp Smart Pro-Soft Lighting](https://play.google.com/store/apps/details?id=com.alllink.smart_lighting)~
 
 ## Dependencies
 This is the list of packages providing the files required to compile lampify. Be aware that package names usually do vary across different linux distributions.
 
 - Arch Linux
   - bluez-libs
-  - libnotify
   - make
   - gcc
 
 - Debian / Ubuntu
   - libbluetooth-dev
-  - libnotify-dev
   - make
   - gcc
 
 ## Compilation
-The compilation process is pretty simple:
+The compilation process is pretty simple. The output is liblampify.so
 ```
-git clone https://github.com/MasterDevX/lampify.git
+git clone https://github.com/keithl-kl/lampify.git
 cd lampify
 make
+make bin
 ```
 To install (places executable in /usr/local/bin and sets up permissions):
 ```
