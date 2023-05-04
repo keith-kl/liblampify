@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <libnotify/notify.h>
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/hci.h>
 #include <bluetooth/hci_lib.h>
@@ -241,6 +240,7 @@ int decodeCommand (char* mode, char* command, char* arg) {
         }
     }
     if (packet) {
+        /*
         if (!strcmp(mode, "v")) {
             notify_init("Lampify");
             NotifyNotification* ntf = notify_notification_new(ntfText, NULL, NULL);
@@ -248,11 +248,16 @@ int decodeCommand (char* mode, char* command, char* arg) {
             if (!notify_notification_show(ntf, NULL)) {
                 fprintf(stderr, "[W] Failed to send notification!\n");
             }
-        }
+        }*/
         fprintf(stdout, "[I] %s\n", ntfText);
         return sendPacket(packet);
     }
     return -1;
+}
+
+void test()
+{
+    printf("testing...\n");
 }
 
 void printUsage (char* basename) {
