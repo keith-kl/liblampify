@@ -35,7 +35,7 @@ This is the list of packages providing the files required to compile lampify. Be
 ## Compilation
 The compilation process is pretty simple. The output is liblampify.so
 ```
-git clone https://github.com/keithl-kl/lampify.git
+git clone https://github.com/keith-kl/liblampify.git
 cd lampify
 make
 make bin
