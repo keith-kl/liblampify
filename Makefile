@@ -11,7 +11,7 @@ all:
 	$(CC) $(CFLAG) -o lampify `pkg-config --cflags glib-2.0` lampify.c `pkg-config --libs glib-2.0` $(LIB)
 
 bin:
-        $(CC) $(CFLAG) -fPIC -shared -o liblampify.so `pkg-config --cflags glib-2.0` lampify.c `pkg-config --libs glib-2.0` $(LIB)
+	$(CC) $(CFLAG) -fPIC -shared -o liblampify.so `pkg-config --cflags glib-2.0` lampify.c `pkg-config --libs glib-2.0` $(LIB)
 
 clean:
 	rm -f $(BASE)
